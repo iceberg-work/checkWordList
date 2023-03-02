@@ -1,0 +1,25 @@
+body {
+    font-size: 15pt;
+}
+
+#main {
+
+}
+
+#left {
+ float: left;
+ width: 50%
+}
+
+#right {
+ float: right;
+ width: 50%;
+}
+
+#input {
+ height: 500px;
+}
+
+#output {
+ height: 500px;
+}
