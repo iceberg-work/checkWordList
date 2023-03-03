@@ -16,6 +16,8 @@ let toClick = () => {
 let check = (input) => {
   let output = []
   let wordMap = new Map()
+  // size 为wordMap中的键值对数
+  let size
   for (let i = 0; i < input.length; i++) {
     let arr_ = divide(input[i])
     // 当单条数据为"“或者”\n”的时候，跳过
@@ -38,6 +40,8 @@ let check = (input) => {
       wordMap.set(arr_[2], input[i])
     }
   }
+  size = wordMap.size
+  output.unshift(`有效单词数：${size}`)
   output.push("检查结束，仍可能出现单词拼写错误.")
   return output.join("\n")
 }
